@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="robots" content="index, follow">
+    <meta name ="description" content="Site de film, MARVEL">
+    <title>HelloMarvel</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/monstyle.css">
+    <style>
+        .bg-1 { background-color: #0f172a !important; }
+        .fg-2 { color: #ffffff !important; }
+        .menu-case {
+            color: #cbd5e1 !important;
+            font-weight: 600;
+            padding: 8px 16px !important;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        .menu-case:hover, .menu-case.active {
+            color: #ffffff !important;
+            background-color: #ef4444;
+        }
+        .theme-success {
+            background-color: #ef4444;
+            color: white;
+            border: 1px solid #ef4444;
+            padding: 6px 16px;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+        .theme-success:hover {
+            background-color: #dc2626;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-1 fg-2">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://www.marvel.com/">
+      <img src="assets/img/brand.jpg"  width="60px" class="d-inline-block align-text-top">
+      <span style="color: red; font-size: xx-large; font-weight: bold;">Monsite</span>
+      
+      
+    </a>
+    <ul class="navbar-nav flex-row flex-wrap gap-2">
+
+    <li class="nav-item">
+        <a class="nav-link menu-case active"
+           href="index.html"> ACCUEIL</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link menu-case"
+           href="films.html">FILMS</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link menu-case"
+           href="heros.html">SUPER-HÉROS</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link menu-case"
+           href="mechants.html">MÉCHANTS</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link menu-case"
+           href="apropos.html">★ À PROPOS</a>
+    </li>
+
+</ul>
+</ul>
+  </div>
+</nav>
+<nav class="navbar bg-1 fg-2">
+  <div class="container-fluid">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search a movie" aria-label="Search"/>
+      <button class="btn-outline theme-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/img/image1.jpg" class="d-block w-100" alt="assets/img/image1.jpg">
+      <div class="carousel-caption d-none d-md-block">
+         <h5>Welcome to the Marvel Universe</h5>
+        <p>Discover the world's greatest superheroes and their incredible adventures.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/image2.jpg" class="d-block w-100" alt="assets/img/image2.jpg">
+      <div class="carousel-caption d-none d-md-block">
+    <h5>The Birth of Marvel</h5>
+    <p>Founded in 1939, Marvel has grown into a legendary universe of superheroes, epic battles, and unforgettable stories.</p>
+</div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/image3.jpg" class="d-block w-100" alt="assets/img/image3.jpg">
+      <div class="carousel-caption d-none d-md-block">
+    <h5>Meet the Avengers</h5>
+    <p>Join Iron Man, Thor, and Captain America as they unite to save the world.</p>
+</div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    
+
+    <script language="javascript" src="assets/js/bootstrap.min.js"></script>
+    <script language="javascript" src="assets/js/monscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="robots" content="index, follow">
+    <meta name ="description" content="Site de film, MARVEL">
+    <title>HelloMarvel</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/monstyle.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-1 { background-color: #0f172a !important; }
+        .fg-2 { color: #ffffff !important; }
+        .menu-case {
+            color: #cbd5e1 !important;
+            font-weight: 600;
+            padding: 8px 16px !important;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        .menu-case:hover, .menu-case.active {
+            color: #ffffff !important;
+            background-color: #ef4444;
+        }
+        .theme-success {
+            background-color: #ef4444;
+            color: white;
+            border: 1px solid #ef4444;
+            padding: 6px 16px;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+        .theme-success:hover {
+            background-color: #dc2626;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<body class="bg-black text-white min-h-screen">
+
+    <!-- 1. BARRE DE NAVIGATION PRINCIPALE -->
+    <nav class="navbar bg-1 fg-2 border-b border-gray-800">
+        <div class="container-fluid">
+            <a class="navbar-brand flex items-center gap-3" href="https://www.marvel.com/">
+                <img src="assets/img/brand.jpg" width="60px" class="d-inline-block align-text-top rounded">
+                <span style="color: red; font-size: xx-large; font-weight: bold;">Monsite</span>
+            </a>
+            
+            <ul class="navbar-nav flex-row flex-wrap gap-2 mb-0">
+                <li class="nav-item">
+                    <a class="nav-link menu-case" href="index.html">ACCUEIL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-case" href="films.html">FILMS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-case active" href="heros.html">SUPER-HÉROS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-case" href="mechants.html">MÉCHANTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-case" href="apropos.html">★ À PROPOS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 2. BARRE DE RECHERCHE -->
+    <nav class="navbar bg-1 fg-2 border-b border-gray-800 py-2">
+        <div class="container-fluid">
+            <form class="d-flex w-100 max-w-md" role="search">
+                <input class="form-control me-2 bg-gray-900 border-gray-700 text-white placeholder-gray-400" type="search" placeholder="Search a superhero..." aria-label="Search"/>
+                <button class="btn-outline theme-success font-semibold" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+           
+    <!-- 4. CONTENU PRINCIPAL DES SUPER-HÉROS -->
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <h1 class="text-4xl md:text-5xl font-black text-center mb-12 tracking-wider text-red-600 uppercase">
+            OUR GREATEST HEROES
+        </h1>
+
+        <!-- Grille des 3 Super-Héros -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Héros 1: Iron Man -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 flex flex-col group hover:border-red-600 transition-colors">
+                <div class="h-80 overflow-hidden relative">
+                    <img src="assets/img/hero1.jpg" alt="Iron Man" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Iron Man</h3>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            Tony Stark, génie, milliardaire et philanthrope, combat le mal vêtu d'une armure de haute technologie dotée d'armements de pointe.
+                        </p>
+                    </div>
+                    <a href="https://www.marvel.com/characters/iron-man-tony-stark" target="_blank" class="block text-center w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 rounded-lg transition-colors">
+                        <i class="fas fa-user-shield mr-2"></i> Voir le profil
+                    </a>
+                </div>
+            </div>
+
+            <!-- Héros 2: Spider-Man -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 flex flex-col group hover:border-red-600 transition-colors">
+                <div class="h-80 overflow-hidden relative">
+                    <img src="assets/img/hero2.jpg" alt="Spider-Man" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Spider-Man</h3>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            Mordu par une araignée radioactive, le jeune Peter Parker utilise son agilité, sa force surhumaine et son sens d'araignée pour protéger New York.
+                        </p>
+                    </div>
+                    <a href="https://www.marvel.com/characters/spider-man-peter-parker" target="_blank" class="block text-center w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 rounded-lg transition-colors">
+                        <i class="fas fa-user-shield mr-2"></i> Voir le profil
+                    </a>
+                </div>
+            </div>
+
+            <!-- Héros 3: Black Panther -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 flex flex-col group hover:border-red-600 transition-colors">
+                <div class="h-80 overflow-hidden relative">
+                    <img src="assets/img/hero3.jpg" alt="Black Panther" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Black Panther</h3>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            Roi du Wakanda, T'Challa protège sa nation technologique et le monde grâce au pouvoir de l'Herbe Cœur et un costume renforcé au Vibranium.
+                        </p>
+                    </div>
+                    <a href="https://www.marvel.com/characters/black-panther-t-challa" target="_blank" class="block text-center w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 rounded-lg transition-colors">
+                        <i class="fas fa-user-shield mr-2"></i> Voir le profil
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script language="javascript" src="assets/js/bootstrap.min.js"></script>
+    <script language="javascript" src="assets/js/monscript.js"></script>
+</body>
+</html>

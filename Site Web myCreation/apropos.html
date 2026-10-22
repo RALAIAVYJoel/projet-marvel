@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Marvel - À Propos</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS pour le style moderne -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-1 { background-color: #0f172a !important; }
+        .fg-2 { color: #ffffff !important; }
+        .menu-case {
+            color: #cbd5e1 !important;
+            font-weight: 600;
+            padding: 8px 16px !important;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        .menu-case:hover, .menu-case.active {
+            color: #ffffff !important;
+            background-color: #ef4444;
+        }
+        .theme-success {
+            background-color: #ef4444;
+            color: white;
+            border: 1px solid #ef4444;
+            padding: 6px 16px;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+        .theme-success:hover {
+            background-color: #dc2626;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col justify-between">
+
+    <div>
+        <!-- 1. BARRE DE NAVIGATION PRINCIPALE -->
+        <nav class="navbar bg-1 fg-2 border-b border-gray-800">
+            <div class="container-fluid">
+                <a class="navbar-brand flex items-center gap-3" href="https://www.marvel.com/">
+                    <img src="assets/img/brand.jpg" width="60px" class="d-inline-block align-text-top rounded">
+                    <span style="color: red; font-size: xx-large; font-weight: bold;">Monsite</span>
+                </a>
+                
+                <ul class="navbar-nav flex-row flex-wrap gap-2 mb-0">
+                    <li class="nav-item">
+                        <a class="nav-link menu-case" href="index.html">ACCUEIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-case" href="films.html">FILMS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-case" href="heros.html">SUPER-HÉROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-case" href="mechants.html">MÉCHANTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-case active" href="apropos.html">★ À PROPOS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- 2. BARRE DE RECHERCHE -->
+        <nav class="navbar bg-1 fg-2 border-b border-gray-800 py-2">
+            <div class="container-fluid">
+                <form class="d-flex w-100 max-w-md" role="search">
+                    <input class="form-control me-2 bg-gray-900 border-gray-700 text-white placeholder-gray-400" type="search" placeholder="Rechercher..." aria-label="Search"/>
+                    <button class="btn-outline theme-success font-semibold" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- 3. CONTENU PRINCIPAL À PROPOS -->
+        <main class="max-w-5xl mx-auto px-4 py-16">
+            
+            <!-- En-tête -->
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-6xl font-black tracking-wider text-red-600 uppercase mb-4">
+                    ABOUT OUR UNIVERSE
+                </h1>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Bienvenue dans notre plateforme dédiée à la passion du cinéma et des comics Marvel.
+                </p>
+            </div>
+
+            <!-- Grille des 3 piliers spéciaux -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                
+                <!-- Carte 1 -->
+                <div class="bg-gray-900/80 p-8 rounded-2xl border border-gray-800 hover:border-red-600 transition-all text-center">
+                    <div class="w-16 h-16 bg-red-600/10 text-red-600 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Une Sélection Épique</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Retrouvez les films les plus emblématiques qui ont marqué l'histoire du cinéma de super-héros.
+                    </p>
+                </div>
+
+                <!-- Carte 2 -->
+                <div class="bg-gray-900/80 p-8 rounded-2xl border border-gray-800 hover:border-red-600 transition-all text-center">
+                    <div class="w-16 h-16 bg-red-600/10 text-red-600 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6">
+                        <i class="fas fa-mask"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Héros & Villains</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Explorez la dualité fascinante entre les sauveurs du monde et leurs pires adversaires.
+                    </p>
+                </div>
+
+                <!-- Carte 3 -->
+                <div class="bg-gray-900/80 p-8 rounded-2xl border border-gray-800 hover:border-red-600 transition-all text-center">
+                    <div class="w-16 h-16 bg-red-600/10 text-red-600 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fait par des Fans</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Un espace conçu par des passionnés, pour vous offrir un accès rapide aux meilleurs contenus.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Citation spéciale -->
+            <div class="bg-gradient-to-r from-red-900/30 via-gray-900 to-red-900/30 p-8 rounded-2xl border border-red-600/30 text-center max-w-3xl mx-auto">
+                <i class="fas fa-quote-left text-red-600 text-3xl mb-4 block"></i>
+                <p class="text-xl md:text-2xl font-serif italic text-gray-200 mb-4">
+                    "With great power comes great responsibility."
+                </p>
+                <span class="text-red-500 font-semibold tracking-wide uppercase text-sm">— Stan Lee</span>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Pied de page simple -->
+    <footer class="text-center py-6 border-t border-gray-900 text-gray-600 text-sm">
+        © 2026 Monsite Marvel - Tous droits réservés.
+    </footer>
+
+    <!-- Scripts Bootstrap et JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/monscript.js"></script>
+</body>
+</html>

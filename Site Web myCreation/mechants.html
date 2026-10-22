@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Marvel - Méchants</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS pour le style moderne des cartes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-1 { background-color: #0f172a !important; }
+        .fg-2 { color: #ffffff !important; }
+        .menu-case {
+            color: #cbd5e1 !important;
+            font-weight: 600;
+            padding: 8px 16px !important;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        .menu-case:hover, .menu-case.active {
+            color: #ffffff !important;
+            background-color: #ef4444;
+        }
+        .theme-success {
+            background-color: #ef4444;
+            color: white;
+            border: 1px solid #ef4444;
+            padding: 6px 16px;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+        .theme-success:hover {
+            background-color: #dc2626;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black text-white min-h-screen">
+
+    <!-- 1. BARRE DE NAVIGATION PRINCIPALE -->
+    <nav class="navbar bg-1 fg-2 border-b border-gray-800">
+        <div class="container-fluid">
+            <a class="navbar-brand flex items-center gap-3" href="https://www.marvel.com/">
+                <img src="assets/img/brand.jpg" width="60px" class="d-inline-block align-text-top rounded">
+                <span style="color: red; font-size: xx-large; font-weight: bold;">Monsite</span>
+            </a>
+            
+            <ul class="navbar-nav flex-row flex-wrap gap-2 mb-0">
+                <li class="nav-item">
+                    <a class="nav-link menu-case" href="index.html">ACCUEIL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-case" href="films.html">FILMS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-case" href="heros.html">SUPER-HÉROS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-case active" href="mechants.html">MÉCHANTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-case" href="apropos.html">★ À PROPOS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 2. BARRE DE RECHERCHE -->
+    <nav class="navbar bg-1 fg-2 border-b border-gray-800 py-2">
+        <div class="container-fluid">
+            <form class="d-flex w-100 max-w-md" role="search">
+                <input class="form-control me-2 bg-gray-900 border-gray-700 text-white placeholder-gray-400" type="search" placeholder="Search a villain..." aria-label="Search"/>
+                <button class="btn-outline theme-success font-semibold" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <!-- 4. CONTENU PRINCIPAL DES MÉCHANTS -->
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <h1 class="text-4xl md:text-5xl font-black text-center mb-12 tracking-wider text-red-600 uppercase">
+            OUR GREATEST VILLAINS
+        </h1>
+
+        <!-- Grille des 3 Méchants -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Méchant 1: Thanos -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 flex flex-col group hover:border-red-600 transition-colors">
+                <div class="h-80 overflow-hidden relative">
+                    <img src="assets/img/mechant1.jpg" alt="Thanos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Thanos</h3>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            Le Titan Fou cherche à rassembler les six Pierres d'Infiniment pour rétablir l'équilibre dans la galaxie en effaçant la moitié de toute forme de vie.
+                        </p>
+                    </div>
+                    <a href="https://www.marvel.com/characters/thanos" target="_blank" class="block text-center w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 rounded-lg transition-colors">
+                        <i class="fas fa-skull mr-2"></i> Voir le profil
+                    </a>
+                </div>
+            </div>
+
+            <!-- Méchant 2: Green Goblin -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 flex flex-col group hover:border-red-600 transition-colors">
+                <div class="h-80 overflow-hidden relative">
+                    <img src="assets/img/mechant2.jpg" alt="Green Goblin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Green Goblin</h3>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            Norman Osborn, rendu fou par son propre sérum d'amélioration, devient le Bouffon Vert et l'un des pires ennemis de Spider-Man.
+                        </p>
+                    </div>
+                    <a href="https://www.marvel.com/characters/green-goblin-norman-osborn" target="_blank" class="block text-center w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 rounded-lg transition-colors">
+                        <i class="fas fa-skull mr-2"></i> Voir le profil
+                    </a>
+                </div>
+            </div>
+
+            <!-- Méchant 3: Killmonger -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 flex flex-col group hover:border-red-600 transition-colors">
+                <div class="h-80 overflow-hidden relative">
+                    <img src="assets/img/mechant3.jpg" alt="Killmonger" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Erik Killmonger</h3>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            Ancien soldat des forces spéciales, Erik Stevens revient au Wakanda pour revendiquer le trône et utiliser les armes du pays pour déclencher une révolution mondiale.
+                        </p>
+                    </div>
+                    <a href="https://www.marvel.com/characters/erik-killmonger" target="_blank" class="block text-center w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 rounded-lg transition-colors">
+                        <i class="fas fa-skull mr-2"></i> Voir le profil
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Scripts Bootstrap et JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/monscript.js"></script>
+</body>
+</html>

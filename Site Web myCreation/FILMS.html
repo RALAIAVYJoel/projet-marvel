@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/monstyle.css">
+     <style>
+         .bg-1 { background-color: #0f172a !important; }
+        .fg-2 { color: #ffffff !important; }
+        .menu-case {
+            color: #cbd5e1 !important;
+            font-weight: 600;
+            padding: 8px 16px !important;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        .menu-case:hover, .menu-case.active {
+            color: #ffffff !important;
+            background-color: #ef4444;
+        }
+        .theme-success {
+            background-color: #ef4444;
+            color: white;
+            border: 1px solid #ef4444;
+            padding: 6px 16px;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+        .theme-success:hover {
+            background-color: #dc2626;
+            color: white;
+        }
+        /* Ambiance lumineuse arrière-plan */
+       .bg-glow {
+    background-color: #000000;
+}
+
+        /* Red clip path accent */
+        .red-banner-title {
+            background: linear-gradient(135deg, #e50914 0%, #b20710 100%);
+            display: inline-block;
+            padding: 6px 32px;
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+        }
+    </style>
+    <title>Our Greatest Movies</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Montserrat & Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        brand: ['Orbitron', 'sans-serif']
+                    },
+                    colors: {
+                        brandRed: '#e50914',
+                        darkBg: '#0b0c10',
+                        cardBg: '#12141c'
+                    }
+                }
+            }
+        }
+    </script>
+   
+</head>
+
+<body class="bg-glow min-h-screen flex flex-col justify-between p-6 sm:p-10 selection:bg-red-600 selection:text-white">
+<nav class="navbar bg-1 fg-2">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://www.marvel.com/">
+      <img src="assets/img/brand.jpg"  width="0px" class="d-inline-block align-text-top">
+      <span style="color: red; font-size: xx-large;">Monsite</span>
+      
+      
+    </a>
+    <ul class="navbar-nav flex-row flex-wrap gap-2">
+
+    <li class="nav-item">
+        <a class="nav-link menu-case active"
+           href="index.html"> ACCUEIL</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link menu-case"
+           href="films.html">FILMS</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link menu-case"
+           href="heros.html"> SUPER-HÉROS</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link menu-case"
+           href="mechants.html"> MÉCHANTS</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link menu-case"
+           href="apropos.html">★ À PROPOS</a>
+    </li>
+
+</ul>
+</ul>
+  </div>
+</nav>
+<nav class="navbar bg-1 fg-2">
+  <div class="container-fluid">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search a movie" aria-label="Search"/>
+      <button class="btn-outline theme-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    <!-- HERO / TITRE PRINCIPAL EPURÉ -->
+    <header class="text-center my-12 sm:my-16">
+        <div class="inline-block mb-3">
+            <span class="text-red-500 font-bold uppercase tracking-[0.3em] text-xs sm:text-sm">Excellence Cinématographique</span>
+        </div>
+        
+        <h1 class="text-4xl sm:text-6xl md:text-7xl font-black font-brand tracking-wider text-white uppercase drop-shadow-lg">
+            Our Greatest <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600">Movies</span>
+        </h1>
+        
+        <div class="w-24 h-1 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6 rounded-full"></div>
+        
+         <script language="javascript" src="assets/js/bootstrap.min.js"></script>
+         <script language="javascript" src="assets/js/monscript.js"></script>
+    </header>
+
+    <!-- SECTION DES 3 FILMS PRINCIPAUX -->
+    <main class="max-w-7xl mx-auto w-full mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10">
+            
+            <!-- FILM 1: Avengers Endgame -->
+            <div class="group bg-cardBg rounded-3xl overflow-hidden border border-white/10 hover:border-red-500/70 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:shadow-red-900/30 flex flex-col justify-between">
+                <div class="relative aspect-[2/3] overflow-hidden">
+                    <span class="absolute top-4 left-4 z-20 bg-black/70 backdrop-blur-md text-yellow-400 text-xs font-extrabold px-3 py-1 rounded-full border border-yellow-500/30 flex items-center gap-1.5">
+                        <i class="fa-solid fa-star text-xs"></i> 8.4 / 10
+                    </span>
+                    <img src="assets/img/page1.jpg" alt="Avengers Endgame" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-cardBg via-transparent to-transparent opacity-90"></div>
+                </div>
+
+                <div class="p-6 -mt-12 relative z-10 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-red-500 uppercase tracking-widest block mb-1">Marvel Studios • 2019</span>
+                        <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-red-400 transition-colors">
+                            Avengers: Endgame
+                        </h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6 font-normal">
+                            Après le choc d'un cataclysme universel, les Avengers restants unissent leurs forces une toute dernière fois pour annuler les actions de Thanos et restaurer l'ordre dans le cosmos.
+                        </p>
+                    </div>
+
+                    <a href="https://www.justwatch.com/fr/film/avengers-4" target="_blank" class="block text-center w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 rounded-lg transition-colors">
+            <i class="fas fa-play mr-2"></i> Regarder le film
+        </a>
+                </div>
+            </div>
+
+            <!-- FILM 2: Spider-Man No Way Home -->
+            <div class="group bg-cardBg rounded-3xl overflow-hidden border border-white/10 hover:border-blue-500/70 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:shadow-blue-900/30 flex flex-col justify-between">
+                <div class="relative aspect-[2/3] overflow-hidden">
+                    <span class="absolute top-4 left-4 z-20 bg-black/70 backdrop-blur-md text-yellow-400 text-xs font-extrabold px-3 py-1 rounded-full border border-yellow-500/30 flex items-center gap-1.5">
+                        <i class="fa-solid fa-star text-xs"></i> 8.2 / 10
+                    </span>
+                    <img src="assets/img/page2.jpg" alt="Spider-Man No Way Home" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-cardBg via-transparent to-transparent opacity-90"></div>
+                </div>
+
+                <div class="p-6 -mt-12 relative z-10 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-blue-400 uppercase tracking-widest block mb-1">Sony / Marvel • 2021</span>
+                        <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                            Spider-Man: No Way Home
+                        </h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6 font-normal">
+                            Pour la première fois dans l'histoire cinématographique de Spider-Man, l'identité du héros est révélée. Une magie défaillante ouvre le multivers, faisant surgir des ennemis d'autres réalités.
+                        </p>
+                    </div>
+
+                     <a href="https://www.justwatch.com/fr/film/spider-man-no-way-home" target="_blank" class="block text-center w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 rounded-lg transition-colors">
+            <i class="fas fa-play mr-2"></i> Regarder le film
+        </a>
+                </div>
+            </div>
+
+            <!-- FILM 3: Black Panther Wakanda Forever -->
+            <div class="group bg-cardBg rounded-3xl overflow-hidden border border-white/10 hover:border-purple-500/70 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:shadow-purple-900/30 flex flex-col justify-between">
+                <div class="relative aspect-[2/3] overflow-hidden">
+                    <span class="absolute top-4 left-4 z-20 bg-black/70 backdrop-blur-md text-yellow-400 text-xs font-extrabold px-3 py-1 rounded-full border border-yellow-500/30 flex items-center gap-1.5">
+                        <i class="fa-solid fa-star text-xs"></i> 7.2 / 10
+                    </span>
+                    <img src="assets/img/page3.jpg" alt="Black Panther Wakanda Forever" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-cardBg via-transparent to-transparent opacity-90"></div>
+                </div>
+
+                <div class="p-6 -mt-12 relative z-10 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-purple-400 uppercase tracking-widest block mb-1">Marvel Studios • 2022</span>
+                        <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
+                            Black Panther: Wakanda Forever
+                        </h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6 font-normal">
+                            La Reine Ramonda, Shuri et les Dora Milaje se battent pour protéger leur nation contre les puissances mondiales intervenantes suite à la mort du Roi T'Challa, tout en faisant face à la menace de Namor.
+                        </p>
+                    </div>
+                    <a href="https://www.justwatch.com/fr/film/black-panther-ii" target="_blank" class="block text-center w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 rounded-lg transition-colors">
+            <i class="fas fa-play mr-2"></i> Regarder le film
+        </a>
+                </div>
+            </div>
+
+        </div>
+        
+    </main>
+
+    <!-- FOOTER SIMPLE -->
+    <footer class="text-center py-6 border-t border-white/5 text-xs text-gray-500">
+        <p>© 2026 CineVerse. Tous droits réservés.</p>
+    </footer>
+
+</html>

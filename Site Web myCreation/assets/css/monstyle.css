@@ -1,0 +1,26 @@
+/* Menu Marvel */
+.menu-case {
+    display: block;
+    background-color: #222222;
+    color: white !important;
+    border: 2px solid #ed1d24;
+    border-radius: 6px;
+    padding: 12px 18px !important;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Quand on passe la souris sur une case */
+.menu-case:hover {
+    background-color: #ed1d24;
+    color: white !important;
+    transform: translateY(-3px);
+}
+
+/* Case de la page active */
+.menu-case.active {
+    background-color: #ed1d24;
+    border-color: white;
+}
